@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Checkout | Rena Handmade</title><link rel="stylesheet" href="style.css"></head>
+<body>
+<div class="topbar">♥ Handmade with love &nbsp; ♥ Easy ordering &nbsp; ♥ Rena Handmade ♥</div>
+<header class="nav"><div class="nav-inner"><a href="index.html"><img class="logo" src="assets/rena-logo.jpg" alt="Rena logo"></a><button class="menu">☰</button><nav class="navlinks"><a href="index.html">Home</a><a href="shop.html">Shop</a><a href="gallery.html">Gallery</a><a href="custom.html">Custom</a><a href="contact.html">Contact</a></nav><div class="navicons"><a class="iconbtn" href="cart.html">🛒<span class="badge" data-cart-count>0</span></a></div></div></header>
+<main><section class="page-hero"><h1>Place Your Order 💕</h1><p>Fill in your delivery details and place your order.</p></section>
+<section class="section"><div class="checkout-grid"><form id="checkoutForm" class="form"><h2>Delivery Details</h2>
+<div class="field"><label>Customer name *</label><input name="name" required placeholder="Your full name"></div>
+<div class="field"><label>Phone number *</label><input name="phone" type="tel" required inputmode="numeric" pattern="[0-9]{10}" maxlength="10" autocomplete="tel" placeholder="10-digit mobile number"></div>
+<div class="field"><label>Country *</label><input name="country" required value="India"></div>
+<div class="field"><label>Street name *</label><input name="street" required placeholder="Street / Road name"></div>
+<div class="field"><label>Address *</label><textarea name="address" required placeholder="House / Flat / Area / Landmark"></textarea></div>
+<div class="field"><label>Pincode *</label><input name="pincode" required inputmode="numeric" pattern="[0-9]{6}" maxlength="6" autocomplete="postal-code" placeholder="e.g. 500001"></div>
+<div class="field"><label>Email (optional)</label><input name="email" type="email" placeholder="For your order receipt"></div>
+<div class="field"><label>Payment method *</label><select name="paymentMethod" required>
+  <option value="">Select payment method</option>
+  <option value="UPI">UPI</option>
+  <option value="Card">Card</option>
+  <option value="Cash on Delivery">Cash on Delivery</option>
+  <option value="Bank Transfer">Bank Transfer</option>
+  <option value="Other">Other</option>
+</select></div>
+<button id="payBtn" class="btn" type="submit">Place Order →</button><p id="checkoutMsg" style="color:#8c6d63" role="status" aria-live="polite"></p></form>
+<div><div id="checkoutSummary" class="total"></div><div class="banner" style="margin-top:18px"><b>💌 Order Confirmation</b><p>After you place the order, the payment instructions will be shown on the confirmation page.</p></div></div></div></section></main>
+<footer><div class="footer-grid"><div><img class="logo" src="assets/rena-logo.jpg" alt="Rena logo"><p>Handmade creations with a little bit of magic. Crochet ♥ Clay ♥ Beads</p></div><div><h3>Shop</h3><a href="shop.html">All Products</a></div><div><h3>Help</h3><a href="contact.html">Contact</a><a href="cart.html">Cart</a></div><div><h3>Follow</h3><p>Instagram: @renasun.zone</p><p>Made with love by Rena ♡</p></div></div></footer>
+<script src="script.js"></script><script src="checkout.js"></script></body></html>
+

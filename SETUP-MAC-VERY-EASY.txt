@@ -1,0 +1,14 @@
+RENA - VERY EASY SETUP (NO ONLINE PAYMENT)
+
+1. Open this folder in VS Code.
+2. Open Terminal in VS Code.
+3. Run: npm install
+4. Create a new file named exactly .env beside package.json.
+5. Open .env.example, copy everything, and paste into .env.
+6. Add your Gmail App Password to SMTP_PASS. Keep it private.
+7. Run: npm start
+8. Open Safari/Chrome: http://localhost:3000
+9. Add product → Cart → Checkout → fill details → Place Order.
+10. You will see “Order Confirmed!” and Rena will receive the order email.
+
+There is no Razorpay and no online payment in this version.

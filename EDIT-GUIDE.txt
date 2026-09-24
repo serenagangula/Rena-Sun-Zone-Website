@@ -1,0 +1,86 @@
+
+RENA WEBSITE - VERY EASY EDIT GUIDE
+====================================
+
+1) CHANGE A PRODUCT PRICE
+--------------------------
+Open data.js and find:
+    price: 349,
+
+Change 349 to your new price.
+
+2) ADD YOUR PRODUCT PHOTO
+-------------------------
+Put your photo inside:
+    assets/products/
+
+Example:
+    assets/products/pink-doll.jpg
+
+Then in data.js change:
+    image: ""
+
+to:
+    image: "assets/products/pink-doll.jpg"
+
+You can use JPG, PNG or WEBP.
+
+3) CHANGE PRODUCT NAME
+----------------------
+In data.js:
+    name: "Flower Turtle",
+
+Change the words inside quotes.
+
+4) ADD A NEW PRODUCT
+--------------------
+Copy an existing product block in data.js, change:
+    id
+    name
+    category
+    price
+    image
+
+5) CHANGE HOMEPAGE BANNERS
+--------------------------
+In data.js find HERO_SLIDES.
+
+Change:
+    title
+    text
+    button
+    link
+
+To use a banner picture:
+    image: "assets/banners/banner1.jpg"
+
+Put banner1.jpg inside:
+    assets/banners/
+
+6) CHANGE EMAIL / INSTAGRAM
+---------------------------
+At the bottom of data.js:
+    email: "renasunzone@gmail.com",
+    instagram: "renasun.zone",
+
+7) ADD WHATSAPP
+---------------
+In data.js:
+    whatsapp: "",
+
+Put your number there later.
+
+8) OPEN THE WEBSITE
+-------------------
+Double-click index.html.
+
+IMPORTANT:
+This ZIP is a front-end website. Cart/wishlist work in the browser.
+For real online orders you still need:
+- Payment gateway
+- Order database
+- Real checkout
+- Shipping integration
+- Admin panel
+- Secure backend
+- Domain + hosting
