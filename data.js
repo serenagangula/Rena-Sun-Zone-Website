@@ -87,6 +87,5 @@ const SITE = {
   email: "renasunzone@gmail.com",
   instagram: "renasun.zone",
   whatsapp: "", // Add your WhatsApp number here later.
-  shipping: "Across India",
-  paymentText: "UPI / Cards / COD"
+  shipping: "Across India"
 };

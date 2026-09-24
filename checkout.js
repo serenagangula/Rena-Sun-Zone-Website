@@ -31,15 +31,8 @@
    }
    btn.disabled=true; showMessage('Placing your order...');
    const data=Object.fromEntries(new FormData(form).entries());
-   const paymentMethod = (data.paymentMethod || '').trim();
-   const paymentDetails = (data.paymentDetails || '').trim();
-   if(!paymentMethod){
-     showMessage('⚠️ Please select a payment method before placing the order.','error');
-     btn.disabled=false;
-     return;
-   }
    try{
-     const r=await fetch('/api/create-order',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({customer:{...data,paymentMethod,paymentDetails},items:c})});
+     const r=await fetch('/api/create-order',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({customer:data,items:c})});
      let order; try{order=await r.json()}catch(e){order={}}
      if(!r.ok) throw new Error(order.error||`Order server returned an error (${r.status}).`);
      localStorage.removeItem('rena_cart');
